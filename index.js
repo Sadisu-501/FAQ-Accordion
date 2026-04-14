@@ -1,0 +1,10 @@
+console.log(typeof 42);
+console.log(typeof "Hello, world!");
+console.log(typeof true);
+console.log(typeof undefined);
+let message = "hello sadisu";
+console.log(message.length);
+let firstName = "sadisu";
+let lastName = "Audu";
+let fullName = firstName + " " + lastName;
+console.log(fullName);

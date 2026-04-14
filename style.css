@@ -11,35 +11,39 @@
   --purple-600: hsl(292, 16%, 49%);
   --purple-950: hsl(292, 42%, 14%);
 }
-body {
-  font-family: "sans-works", sans-serif;
-}
 
 body {
-  /* background-color: var(--purple-100); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.faq-container {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 1100px;
   background: url(images/background-pattern-desktop.svg) no-repeat top center;
   background-size: contain;
+  font-family: "Work Sans", sans-serif;
+  background-repeat: no-repeat;
+  background-position: top center;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background-size: 100% auto;
   background-color: var(--purple-100);
 }
 
-.faq {
-  background-color: var(--purple-600);
+.faq-container {
   width: 100%;
   max-width: 1100px;
-  height: 100vh;
-  max-height: 50vh;
+  background-color: var(--purple-600);
+}
+.faq {
+  width: 100%;
+  background-color: var(--white);
   border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+}
+.faq .faq-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.faq-wrapper {
+  margin-top: 2rem;
 }
