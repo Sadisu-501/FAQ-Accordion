@@ -15,7 +15,6 @@
 
 body {
   background: url(images/background-pattern-desktop.svg) no-repeat top center;
-  background-size: contain;
   font-family: "Work Sans", sans-serif;
   background-repeat: no-repeat;
   background-position: top center;
@@ -24,12 +23,14 @@ body {
   align-items: center;
   min-height: 100vh;
   background-size: 100% auto;
+  background-size: contain;
   background-color: var(--purple-100);
+  font-size: 1rem;
 }
 
 .faq-container {
   width: 100%;
-  max-width: 900px;
+  max-width: 600px;
   padding: 2rem;
 }
 .faq {
@@ -38,13 +39,15 @@ body {
   background-color: var(--white);
   border-radius: 12px;
   padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+
 .faq-title {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0rem 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   cursor: pointer;
 }
 .faq-wrapper {
@@ -53,14 +56,20 @@ body {
 .question {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
   color: var(--purple-950);
-  font-size: 16px;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+
+  padding: 1rem 0;
 }
 .question img {
   transition: all 0.3s ease;
 }
-
+.question:hover h4 {
+  color: var(--icon-fill);
+}
 .answer {
   padding: 1rem;
   font-size: 13px;
@@ -71,12 +80,47 @@ body {
 .answer.active {
   display: block;
 }
+
 ion-icon {
-  fill: var(--icon-fill);
+  color: var(--icon-fill);
   font-size: 25px;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
   transition: all 0.3s ease;
 }
 ion-icon:hover {
-  fill: var(--purple-950);
-  /* transform: scale(1.02); */
+  color: var(--purple-950);
+  transform: scale(1.02);
+}
+
+/* media queries */
+@media (max-width: 1440px) {
+  h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .answer {
+    font-size: 0.9rem;
+  }
+}
+
+/* small laptop screens */
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 0.9rem;
+  }
+  .answer {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* mobile screen */
+@media (max-width: 480px) {
+  body {
+    background: url(images/background-pattern-mobile.svg) no-repeat top center;
+    background-size: contain;
+  }
 }
