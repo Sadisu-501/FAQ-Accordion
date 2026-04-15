@@ -1,10 +1,18 @@
-console.log(typeof 42);
-console.log(typeof "Hello, world!");
-console.log(typeof true);
-console.log(typeof undefined);
-let message = "hello sadisu";
-console.log(message.length);
-let firstName = "sadisu";
-let lastName = "Audu";
-let fullName = firstName + " " + lastName;
-console.log(fullName);
+// FAQ Accordion JavaScript
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach((item) => {
+  const title = item.querySelector(".faq-title");
+  const answer = item.querySelector(".answer");
+  const icon = item.querySelector("ion-icon");
+
+  title.addEventListener("click", () => {
+    answer.classList.toggle("active");
+
+    if (answer.classList.contains("active")) {
+      icon.setAttribute("name", "remove-circle");
+    } else {
+      icon.setAttribute("name", "add-circle");
+    }
+  });
+});

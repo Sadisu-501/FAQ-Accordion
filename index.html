@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <div class="faq-container">
@@ -22,10 +23,10 @@
         <!-- Accordion section -->
         <section class="faq-wrapper">
           <!-- first question -->
-          <div>
+          <div class="faq-item">
             <div class="faq-title question">
               <h4>What is Front end Mentor, and how will it hep me?</h4>
-              <img src="images/icon-plus.svg" alt="" />
+              <ion-icon name="add-circle"></ion-icon>
             </div>
             <p class="answer">
               Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and
@@ -34,10 +35,10 @@
           </div>
 
           <!-- second question -->
-          <div>
+          <div class="faq-item">
             <div class="faq-title question">
               <h4>Is Frontend Mentor free?</h4>
-              <img src="images/icon-plus.svg" alt="" />
+              <ion-icon name="add-circle"></ion-icon>
             </div>
             <p class="answer">
               Yes, Frontend Mentor offers both free and premium plans. The free plan includes access to a selection of coding challenges, while the premium plan provides additional features and
@@ -46,10 +47,10 @@
           </div>
 
           <!-- Third question -->
-          <div>
+          <div class="faq-item">
             <div class="faq-title question">
               <h4>Can i use front end mentor projects in my Portfolio?</h4>
-              <img src="images/icon-plus.svg" alt="" />
+              <ion-icon name="add-circle"></ion-icon>
             </div>
             <p class="answer">
               Yes, Frontend Mentor offers both free and premium plans. The free plan includes access to a selection of coding challenges, while the premium plan provides additional features and
@@ -58,10 +59,10 @@
           </div>
 
           <!-- fourth Question -->
-          <div>
+          <div class="faq-item">
             <div class="faq-title question">
               <h4>How can i get help if I'm stuck in a project?</h4>
-              <img src="images/icon-plus.svg" alt="" />
+              <ion-icon name="add-circle"></ion-icon>
             </div>
             <p class="answer">
               Yes, Frontend Mentor offers both free and premium plans. The free plan includes access to a selection of coding challenges, while the premium plan provides additional features and
@@ -71,5 +72,8 @@
         </section>
       </div>
     </div>
+    <!-- icons script - this is what will make the icons to work -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
